@@ -1,52 +1,65 @@
-# Rocket.Chat React Native Mobile
+<h1 align="center"><b> Rocket.Chat App</b> </h1>
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/RocketChat/Rocket.Chat.ReactNative.svg)](https://greenkeeper.io/)
+<h1 align="center">
+  <br>
+  <kbd>
+    <img src="https://image.prntscr.com/image/YrkdAm5xSxe0MmkqrvGeJA.png" alt="Animavita" height="525" width="725">
+  </kbd>
+  <br>
+  <br><br>
+</h1>
+
+<p align="center">Rocket.Chat React Native Mobile</p>
+
+<p align="center"><i>"How to save a life?" - Rocket.Chat</i> </p>
+
+<p align="center">
+  
 [![Build Status](https://img.shields.io/travis/RocketChat/Rocket.Chat.ReactNative/master.svg)](https://travis-ci.org/RocketChat/Rocket.Chat.ReactNative)
 [![Project Dependencies](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative.svg)](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb15e2392a71473ea59d3f634f35c54e)](https://www.codacy.com/app/RocketChat/Rocket.Chat.ReactNative?utm_source=github.com&utm_medium=referral&utm_content=RocketChat/Rocket.Chat.ReactNative&utm_campaign=badger)
 [![codecov](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative/branch/master/graph/badge.svg)](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative)
 [![CodeFactor](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative/badge)](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative)
 
-**Supported Server Versions:** 0.66.0+
+</p>
 
-## Download
-<a href="https://play.google.com/store/apps/details?id=chat.rocket.reactnative">
-  <img alt="Download on Google Play" src="https://play.google.com/intl/en_us/badges/images/badge_new.png" height=43>
-</a>
-<a href="https://itunes.apple.com/us/app/rocket-chat-experimental/id1272915472">
-  <img alt="Download on App Store" src="https://user-images.githubusercontent.com/7317008/43209852-4ca39622-904b-11e8-8ce1-cdc3aee76ae9.png" height=43>
-</a>
+<p align="center">
+  <a href="#blush-overview">Overview</a> •
+  <a href="#dizzy-roadmap">Roadmap</a> •
+  <a href="#wrench-install-instructions">Install</a> •
+  <a href="#zap-tech-stack">Tech Stack</a> •
+  <a href="#iphone-Test">Test</a> •
+  <a href="#eyes-version">Version</a> •
+</p>
 
-## Beta Access
+<p align="center">
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/1.PNG" alt="1">
+  </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/2.PNG" alt="2">
+  </kbd>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/3.PNG" alt="3">
+  </kbd>
+  <br/><br/>
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/4.PNG" alt="4">
+  </kbd>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/5.PNG" alt="5">
+  </kbd>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd>
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/6.PNG" alt="6">
+  </kbd>
+</p>
 
-### TestFlight
+## :blush: **Overview?**
 
-You can signup to our TestFlight builds by acessing this link: https://testflight.apple.com/join/7I3dLCNT.
-
-### Google Play beta
-
-You can subscribe to Google Play Beta program and download latest versions: https://play.google.com/store/apps/details?id=chat.rocket.reactnative
-
-
-## Installing dependencies
-
-Follow the [React Native Getting Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for detailed instructions on setting up your local machine for development.
-
-### Running single server
-If you don't need multiple servers, there is a branch `single-server` just for that.
-Readme will guide you on how to config.
-
-## Current priorities
-1) [NEW] Jitsi integration ([#711][i711])
-2) [NEW] Federation ([#706][i706])
-3) [NEW] Threads ([#707][i707])
-4) [NEW] Record video ([#712][i712])
-5) [NEW] Slash Commands ([#405][i405])
-6) [NEW] Draft message per room ([#708][i708])
-7) [NEW] Share extension ([#391][i391])
-
-
-## Features
 | Feature                                                   	    | Status 	|
 |---------------------------------------------------------------	|--------	|
 | Jitsi Integration                                             	| ❌    	|
@@ -173,36 +186,65 @@ Readme will guide you on how to config.
 | Attachment List                                               	| ✅    	|
 | Join a Room                                                   	| ✅    	|
 
-## Detox (end-to-end tests)
-- Build your app
+## :dizzy: **Roadmap**
 
-```bash
-$ detox build --configuration ios.sim.release
-```
+-   [x] Make it work on IOS
+-   [x] Make it work on Android
+-   [x] Make it work on Expo
+-   [x] Transform into responsive
+-   [x] Update to latest React Native version
 
-- Run tests
+## :wrench: **Install instructions**
 
-```bash
-$ detox test --configuration ios.sim.release
-```
+### Getting Started
 
-## Storybook
-- Open index.js
+#### 1) Clone & Install Dependencies
 
-- Uncomment following line
+- 1.1) `git clone https://github.com/funnyjerry/react-native-homeautomation-app.git`
+- 1.2) `cd react-native-homeautomation-app` - cd into your newly created project directory.
+- 1.3) Install NPM packages with `yarn install`
+        **Note:** NPM has issues with React Native so `yarn` is recommended over `npm`.
+- 1.4) **[iOS]** `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
+- 1.5) **[Android]** If you haven't already generated a `debug.keystore` file you will need to complete this step from within the `/android/app` folder. Run `keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000`
 
-```bash
-import './storybook';
-```
+#### 2) Start your app
 
-- Comment out following lines
-```bash
-import './app/ReactotronConfig';
-import { AppRegistry } from 'react-native';
-import App from './app/index';
-import { name as appName } from './app.json';
+- 2.1) **[iOS]** Build and run the iOS app, run `react-native run-ios` (to run on simulator) or `react-native run-ios --device` (to run on real device) from the root of your project. The first build will take some time.
+- 2.2) **[Android]** If you haven't already got an android device attached/emulator running then you'll need to get one running (make sure the emulator is with Google Play / APIs). When ready run `react-native run-android` from the root of your project.
 
-AppRegistry.registerComponent(appName, () => App);
-```
+## :zap: **Tech Stack**
 
-- Start your application again
+<h1 align="center">
+  <img src="https://apprecs.org/gp/images/app-icons/300/d8/host.exp.exponent.jpg" alt="Expo" height="100" width="100">
+  <img src="https://ionicframework.com/docs/assets/icons/logo-react-icon.png" alt="RN" height="100" width="100">
+  <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png" alt="Firebase" height="100" width="100">
+  <img src="https://icon-library.net/images/png-map-icon/png-map-icon-26.jpg" alt="Map" height="100" width="100">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" alt="Facebook" height="100" width="100">
+  <img src="https://www.xda-developers.com/files/2012/09/bluetooth.png" alt="Blooth" height="100" width="100">
+  <img src="http://www.wiresmart.co/wp-content/uploads/2018/05/wifi.png" alt="WIFI" height="100" width="100">
+  <img src="https://icon-library.net/images/amazon-icon-download/amazon-icon-download-16.jpg" alt="Amazon" height="100" width="100">
+  <img src="https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png" alt="GraphQL" height="100" width="100">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61P4x9XywOL.png" alt="Notification" height="100" width="100">
+  <img src="https://clipartsworld.com/images/google-plus-clipart-png-50.png" alt="Google" height="100" width="100">
+
+
+
+  <br>
+</h1>
+
+-   [React Native](https://github.com/facebook/react-native)
+-   [Redux](https://github.com/reduxjs/react-redux)
+-   [Redux-Persist](https://github.com/rt2zz/redux-persist)
+-   [Lottie React Native](https://github.com/react-native-community/lottie-react-native)
+-   [Rocket Chat](https://github.com/FaridSafi/react-native-gifted-chat)
+-   [Eslint](https://eslint.org/)
+-   [Facebook Login](https://github.com/facebook/react-native-fbsdk)
+
+## :iphone: **Test**
+
+- [x] Test on Android
+- [x] Test on iOS
+
+## :eyes: **Version**
+- [x] React-Native 0.58.6
+- [ ] Expo 35
