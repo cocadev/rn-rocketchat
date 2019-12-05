@@ -22,10 +22,7 @@ const restore = function* restore() {
 		yield put(setAllPreferences(sortPreferences));
 
 		if (!token || !server) {
-			yield all([
-				AsyncStorage.removeItem(RocketChat.TOKEN_KEY),
-				AsyncStorage.removeItem('currentServer')
-			]);
+			yield all([ AsyncStorage.removeItem(RocketChat.TOKEN_KEY), AsyncStorage.removeItem('currentServer') ]);
 			yield put(actions.appStart('outside'));
 		} else if (server) {
 			const serverObj = database.databases.serversDB.objectForPrimaryKey('servers', server);

@@ -1,8 +1,6 @@
 import { AsyncStorage } from 'react-native';
 import { delay } from 'redux-saga';
-import {
-	takeLatest, take, select, put, all
-} from 'redux-saga/effects';
+import { takeLatest, take, select, put, all } from 'redux-saga/effects';
 
 import Navigation from '../lib/Navigation';
 import * as types from '../actions/actionsTypes';
@@ -13,7 +11,9 @@ import EventEmitter from '../utils/events';
 import { appStart } from '../actions';
 
 const roomTypes = {
-	channel: 'c', direct: 'd', group: 'p'
+	channel: 'c',
+	direct: 'd',
+	group: 'p'
 };
 
 const navigate = function* navigate({ params }) {
@@ -21,7 +21,7 @@ const navigate = function* navigate({ params }) {
 	if (params.rid) {
 		const canOpenRoom = yield RocketChat.canOpenRoom(params);
 		if (canOpenRoom) {
-			const [type, name] = params.path.split('/');
+			const [ type, name ] = params.path.split('/');
 			yield Navigation.navigate('RoomsListView');
 			Navigation.navigate('RoomView', { rid: params.rid, name, t: roomTypes[type] });
 		}
@@ -35,23 +35,23 @@ const handleOpen = function* handleOpen({ params }) {
 
 	let { host } = params;
 	if (!/^(http|https)/.test(host)) {
-		host = `https://${ params.host }`;
+		host = `https://${params.host}`;
 	}
 	// remove last "/" from host
 	if (host.slice(-1) === '/') {
 		host = host.slice(0, host.length - 1);
 	}
 
-	const [server, user] = yield all([
+	const [ server, user ] = yield all([
 		AsyncStorage.getItem('currentServer'),
-		AsyncStorage.getItem(`${ RocketChat.TOKEN_KEY }-${ host }`)
+		AsyncStorage.getItem(`${RocketChat.TOKEN_KEY}-${host}`)
 	]);
 
 	// TODO: needs better test
 	// if deep link is from same server
 	if (server === host) {
 		if (user) {
-			const connected = yield select(state => state.server.connected);
+			const connected = yield select((state) => state.server.connected);
 			if (!connected) {
 				yield put(selectServerRequest(host));
 				yield take(types.SERVER.SELECT_SUCCESS);

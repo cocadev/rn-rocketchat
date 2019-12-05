@@ -9,19 +9,19 @@ export const onNotification = (notification) => {
 		const data = notification.getData();
 		if (data) {
 			try {
-				const {
-					rid, name, sender, type, host
-				} = EJSON.parse(data.ejson);
+				const { rid, name, sender, type, host } = EJSON.parse(data.ejson);
 
 				const types = {
-					c: 'channel', d: 'direct', p: 'group'
+					c: 'channel',
+					d: 'direct',
+					p: 'group'
 				};
 				const roomName = type === 'd' ? sender.username : name;
 
 				const params = {
 					host,
 					rid,
-					path: `${ types[type] }/${ roomName }`
+					path: `${types[type]}/${roomName}`
 				};
 				store.dispatch(deepLinkingOpen(params));
 			} catch (e) {
@@ -32,7 +32,7 @@ export const onNotification = (notification) => {
 };
 
 export const getDeviceToken = () => PushNotification.getDeviceToken();
-export const setBadgeCount = count => PushNotification.setBadgeCount(count);
+export const setBadgeCount = (count) => PushNotification.setBadgeCount(count);
 export const initializePushNotifications = () => {
 	setBadgeCount();
 	return PushNotification.configure({

@@ -1,7 +1,5 @@
 import { AsyncStorage } from 'react-native';
-import {
-	put, call, takeLatest, select
-} from 'redux-saga/effects';
+import { put, call, takeLatest, select } from 'redux-saga/effects';
 
 import * as types from '../actions/actionsTypes';
 import { appStart } from '../actions';
@@ -12,10 +10,10 @@ import log from '../utils/log';
 import I18n from '../i18n';
 import database from '../lib/realm';
 
-const getServer = state => state.server.server;
-const loginWithPasswordCall = args => RocketChat.loginWithPassword(args);
-const loginCall = args => RocketChat.login(args);
-const logoutCall = args => RocketChat.logout(args);
+const getServer = (state) => state.server.server;
+const loginWithPasswordCall = (args) => RocketChat.loginWithPassword(args);
+const loginCall = (args) => RocketChat.login(args);
+const logoutCall = (args) => RocketChat.logout(args);
 
 const handleLoginRequest = function* handleLoginRequest({ credentials }) {
 	try {
@@ -32,14 +30,14 @@ const handleLoginRequest = function* handleLoginRequest({ credentials }) {
 };
 
 const handleLoginSuccess = function* handleLoginSuccess({ user }) {
-	const adding = yield select(state => state.server.adding);
+	const adding = yield select((state) => state.server.adding);
 	yield AsyncStorage.setItem(RocketChat.TOKEN_KEY, user.token);
 
 	const server = yield select(getServer);
 	try {
 		RocketChat.loginSuccess({ user });
 		I18n.locale = user.language;
-		yield AsyncStorage.setItem(`${ RocketChat.TOKEN_KEY }-${ server }`, JSON.stringify(user));
+		yield AsyncStorage.setItem(`${RocketChat.TOKEN_KEY}-${server}`, JSON.stringify(user));
 	} catch (error) {
 		console.log('loginSuccess saga -> error', error);
 	}
@@ -71,7 +69,7 @@ const handleLogout = function* handleLogout() {
 			// see if there's other logged in servers and selects first one
 			if (servers.length > 0) {
 				const newServer = servers[0].id;
-				const token = yield AsyncStorage.getItem(`${ RocketChat.TOKEN_KEY }-${ newServer }`);
+				const token = yield AsyncStorage.getItem(`${RocketChat.TOKEN_KEY}-${newServer}`);
 				if (token) {
 					return yield put(selectServerRequest(newServer));
 				}

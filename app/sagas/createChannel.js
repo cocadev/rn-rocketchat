@@ -1,6 +1,4 @@
-import {
-	select, put, call, take, takeLatest
-} from 'redux-saga/effects';
+import { select, put, call, take, takeLatest } from 'redux-saga/effects';
 
 import { CREATE_CHANNEL, LOGIN } from '../actions/actionsTypes';
 import { createChannelSuccess, createChannelFailure } from '../actions/createChannel';
@@ -12,7 +10,7 @@ const create = function* create(data) {
 
 const handleRequest = function* handleRequest({ data }) {
 	try {
-		const auth = yield select(state => state.login.isAuthenticated);
+		const auth = yield select((state) => state.login.isAuthenticated);
 		if (!auth) {
 			yield take(LOGIN.SUCCESS);
 		}

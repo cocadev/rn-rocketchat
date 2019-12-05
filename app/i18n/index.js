@@ -11,7 +11,13 @@ I18n.fallbacks = true;
 I18n.defaultLocale = 'en';
 
 I18n.translations = {
-	en, ru, 'pt-BR': ptBR, 'zh-CN': zhCN, fr, de, 'pt-PT': ptPT
+	en,
+	ru,
+	'pt-BR': ptBR,
+	'zh-CN': zhCN,
+	fr,
+	de,
+	'pt-PT': ptPT
 };
 
 export default I18n;
