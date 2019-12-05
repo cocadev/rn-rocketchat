@@ -215,20 +215,10 @@
 ## :zap: **Tech Stack**
 
 <h1 align="center">
-  <img src="https://apprecs.org/gp/images/app-icons/300/d8/host.exp.exponent.jpg" alt="Expo" height="100" width="100">
   <img src="https://ionicframework.com/docs/assets/icons/logo-react-icon.png" alt="RN" height="100" width="100">
-  <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-512.png" alt="Firebase" height="100" width="100">
-  <img src="https://icon-library.net/images/png-map-icon/png-map-icon-26.jpg" alt="Map" height="100" width="100">
   <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-logo-2019-1597680-1350125.png" alt="Facebook" height="100" width="100">
-  <img src="https://www.xda-developers.com/files/2012/09/bluetooth.png" alt="Blooth" height="100" width="100">
-  <img src="http://www.wiresmart.co/wp-content/uploads/2018/05/wifi.png" alt="WIFI" height="100" width="100">
-  <img src="https://icon-library.net/images/amazon-icon-download/amazon-icon-download-16.jpg" alt="Amazon" height="100" width="100">
-  <img src="https://raw.githubusercontent.com/rohan-varma/rohan-blog/gh-pages/images/graphql.png" alt="GraphQL" height="100" width="100">
   <img src="https://images-na.ssl-images-amazon.com/images/I/61P4x9XywOL.png" alt="Notification" height="100" width="100">
   <img src="https://clipartsworld.com/images/google-plus-clipart-png-50.png" alt="Google" height="100" width="100">
-
-
-
   <br>
 </h1>
 
@@ -247,4 +237,4 @@
 
 ## :eyes: **Version**
 - [x] React-Native 0.58.6
-- [ ] Expo 35
+- [ ] Expo
