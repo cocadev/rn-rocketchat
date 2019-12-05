@@ -190,8 +190,8 @@
 
 #### 1) Clone & Install Dependencies
 
-- 1.1) `git clone https://github.com/funnyjerry/react-native-homeautomation-app.git`
-- 1.2) `cd react-native-homeautomation-app` - cd into your newly created project directory.
+- 1.1) `git clone https://github.com/funnyjerry/react-native-websocket-chat-app.git`
+- 1.2) `cd react-native-websocket-chat-app` - cd into your newly created project directory.
 - 1.3) Install NPM packages with `yarn install`
         **Note:** NPM has issues with React Native so `yarn` is recommended over `npm`.
 - 1.4) **[iOS]** `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
