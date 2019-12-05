@@ -21,13 +21,12 @@ const reducers = combineReducers({
 const store = createStore(reducers);
 
 storiesOf('Avatar', module)
-	.addDecorator(story => <Provider store={store}>{story()}</Provider>)
+	.addDecorator((story) => <Provider store={store}>{story()}</Provider>)
 	.add('avatar', () => Avatar);
 storiesOf('RoomItem', module)
-	.addDecorator(story => <Provider store={store}>{story()}</Provider>)
+	.addDecorator((story) => <Provider store={store}>{story()}</Provider>)
 	.add('list', () => RoomItem);
-storiesOf('Message', module)
-	.add('list', () => Message);
+storiesOf('Message', module).add('list', () => Message);
 // FIXME: I couldn't make these pass on jest :(
 // storiesOf('RoomViewHeader', module)
 // 	.add('list', () => RoomViewHeader);
