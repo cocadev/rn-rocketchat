@@ -34,27 +34,27 @@
 
 <p align="center">
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/1.PNG" alt="1">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/1.png" alt="1">
   </kbd>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/2.PNG" alt="2">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/2.png" alt="2">
   </kbd>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/3.PNG" alt="3">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/3.png" alt="3">
   </kbd>
   <br/><br/>
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/4.PNG" alt="4">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/4.png" alt="4">
   </kbd>
     &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/5.PNG" alt="5">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/5.png" alt="5">
   </kbd>
     &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
-    <img width="250" style="border-radius: 5px" height="450" src="screenshots/6.PNG" alt="6">
+    <img width="250" style="border-radius: 5px" height="450" src="screenshots/6.png" alt="6">
   </kbd>
 </p>
 
