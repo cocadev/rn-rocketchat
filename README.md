@@ -1,6 +1,6 @@
 <h1 align="center"><b> Rocket.Chat React-Native App</b> </h1>
 
-<p align="center">Rocket.Chat React Native Mobile</p>
+<p align="center">Rocket.Chat React Native Mobile App</p>
 
 <p align="center"><i>"How to save a life?" - Rocket.Chat</i> </p>
 
