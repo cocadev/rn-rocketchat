@@ -1,4 +1,4 @@
-<h1 align="center"><b> Rocket.Chat React-Native Mobile App</b> </h1>
+<h1 align="center"><b> Rocket Chat React-Native Mobile App</b> </h1>
 
 <p align="center">Rocket.Chat React Native Mobile App</p>
 
