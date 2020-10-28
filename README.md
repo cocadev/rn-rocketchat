@@ -10,7 +10,7 @@
   <a href="#wrench-install-instructions">Install</a> •
   <a href="#zap-tech-stack">Tech Stack</a> •
   <a href="#iphone-Test">Test</a> •
-  <a href="#eyes-version">Version</a> •
+  <a href="#eyes-version">Version</a> 
 </p>
 
 <p align="center">
